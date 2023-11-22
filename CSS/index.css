@@ -1,0 +1,66 @@
+/* Custom Properties */
+:root {
+  --text: #06020d;
+  --tableBackground: #ede5fb;
+  --background: #a8f0c4b2;
+  --accent: #6835bb;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.mainHeading {
+  color: var(--text);
+  text-align: center;
+}
+
+.mainHeading:hover {
+  text-decoration: underline var(--accent);
+  color: var(--accent);
+}
+
+table {
+  background-color: var(--tableBackground);
+  color: var(--text);
+  border: var(--accent) 5px double;
+  height: 25rem;
+  width: 60rem;
+  text-align: center;
+  margin: auto;
+  box-shadow: 4px 4px;
+}
+
+th,
+td {
+  border: var(--accent) 2px solid;
+  font-size: 2rem;
+}
+
+td {
+  font-size: 2rem;
+}
+
+input {
+  width: 3rem;
+  border: var(--accent) 4px outset;
+  border-radius: 5rem;
+  margin: 0.5rem;
+}
+
+button {
+  background-color: var(--tableBackground);
+  border: var(--accent) 0.4rem double;
+  color: var(--accent);
+  transition: cubic-bezier(1, 0.05, 0.55, 0.95);
+}
+
+button:hover {
+  border: var(--accent) 0.4rem solid;
+  transform: translate(2px, 5px);
+}
+
+label {
+  font-size: 1rem;
+}
